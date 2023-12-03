@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          BerkDurmusoglu
+          BerkDurmusoglu NumberProg
         </a>
       </header>
     </div>

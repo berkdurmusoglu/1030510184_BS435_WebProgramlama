@@ -13,7 +13,7 @@ function App() {
   const startGame = () => {
     setRandomNumber(Math.floor(Math.random() * (maxNumber - minNumber) + minNumber));
     setAttempts(Math.floor(maxNumber/5+1));
-    setMessage("Guess Number");
+    setMessage("Tahmininizi Giriniz..");
     setUserGuess(0);
   }
 
@@ -39,13 +39,15 @@ function App() {
     setAttempts(attempts -1);
 
 
+
+
     if (attempts === 0 ){
       loseStart()
     }
   }
   const loseStart = () => {
     setMessage("Bilemediniz! Tekrar Deneyin..");
-    setAttempts(10);
+    setAttempts(Math.floor(maxNumber/5+1));
   }
   return (
 

@@ -40,7 +40,6 @@ function App() {
 
 
 
-
     if (attempts === 0 ){
       loseStart()
     }

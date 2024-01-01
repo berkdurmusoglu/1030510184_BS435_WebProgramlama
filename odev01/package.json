@@ -36,5 +36,10 @@
     ]
   },
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+
+  "engines" : {
+    "npm" : "10.2.4",
+    "node" : "20.10.0"
+  }
 }

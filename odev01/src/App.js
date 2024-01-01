@@ -8,12 +8,13 @@ function App() {
   const [randomNum, setRandomNumber] = useState();
   const [userGuess, setUserGuess] = useState('');
   const [message, setMessage] = useState('');
-  const [attempts, setAttempts] = useState(0);
+  const [attempts, setAttempts] = useState(20);
 
   const startGame = () => {
     setRandomNumber(Math.floor(Math.random() * (maxNumber - minNumber) + minNumber));
     setAttempts(Math.floor(maxNumber/5+1));
     setMessage("Guess Number");
+    setUserGuess(0);
   }
 
   const handleInputChange = (event) => {
@@ -36,6 +37,7 @@ function App() {
       setMessage('Daha düşük bir sayı deneyin.');
     }
     setAttempts(attempts -1);
+
 
     if (attempts === 0 ){
       loseStart()
